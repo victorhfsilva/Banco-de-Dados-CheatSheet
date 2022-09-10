@@ -1,4 +1,4 @@
-# Administração de Previlégios
+# Administração de Privilégios
 
 ## Role
 Cria um Role
@@ -82,39 +82,39 @@ Lista Roles (psql terminal)
 ```
 ## Administrando Acessos
 
-Garantindo previlégios a banco de dados
+Garantindo privilégios a banco de dados
 ```
-GRANT <previlégios> ON DATABASE <banco de dados> TO <role>
+GRANT <privilégios> ON DATABASE <banco de dados> TO <role>
 ```
-Previlégios:
+Privilégios:
 ```
 CREATE | CONNECT | TEMPORARY | TEMP | ALL
 ```
-Garantindo previlégios a Schemas
+Garantindo privilégios a Schemas
 ```
-GRANT <previlégios> ON SCHEMA <schema> TO <role>
+GRANT <privilégios> ON SCHEMA <schema> TO <role>
 ```
-Previlégios:
+Privilégios:
 ```
 CREATE | USAGE
 ```
-Garantindo previlégios a Table
+Garantindo privilégios a Table
 ```
-GRANT <previlégios> ON {TABLE <tabela> | ALL TABLES IN SCHEMA <schema>} TO <role>
+GRANT <privilégios> ON {TABLE <tabela> | ALL TABLES IN SCHEMA <schema>} TO <role>
 ```
-Previlégios:
+Privilégios:
 ```
 SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER | ALL
 ```
-Retirando previlégios de Banco de Dados:
+Retirando privilégios de Banco de Dados:
 ```
-REVOKE <previlégios> ON DATABASE <banco de dados> FROM <role>
+REVOKE <privilégios> ON DATABASE <banco de dados> FROM <role>
 ```
-Retirando previlégios de Schemas:
+Retirando privilégios de Schemas:
 ```
-REVOKE <previlégios> ON SCHEMA <banco de dados> FROM <role>
+REVOKE <privilégios> ON SCHEMA <banco de dados> FROM <role>
 ```
-Retirando previlégios de Tabelas:
+Retirando privilégios de Tabelas:
 ```
-REVOKE <previlégios> ON TABLE <banco de dados> FROM <role>
+REVOKE <privilégios> ON TABLE <banco de dados> FROM <role>
 ```
